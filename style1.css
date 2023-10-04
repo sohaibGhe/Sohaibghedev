@@ -1,0 +1,231 @@
+body{
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;;
+
+}
+/* nav bar sttings */
+.bg1{
+  background: url(images/wallpaperflare.com_wallpaper.jpg) left top no-repeat;
+  background-size: cover;
+}
+
+.nt1{
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 5px;
+  text-shadow: 2px 2px 2px black;
+}
+.nt1.nt1:hover{
+text-shadow: 2px 2px 2px white;
+}
+
+/* section */
+
+#about{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+#Why-Choose-Me {
+  background-color:#4831D4 ;
+}
+
+#contact{
+  margin-top: 50px;
+  min-height: 60vh;
+  background-color: #4831d4;
+}
+
+/* title and disq */
+.t1{
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #f5f5dc;
+  
+  animation-name: fes;
+  animation-duration: 1s;
+}
+.t2 {
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #4831d4;
+  margin-bottom: 10px;
+}
+
+.t3 {
+  color: #ccf381;
+  font-size: 30px;
+  font-weight: 900;
+}
+.t4 {
+  color: #4831d4;
+  font-size: 30px;
+  font-weight: 900;   
+}
+.t5 {
+  color: #BDD431; 
+  text-decoration: none; 
+  font-size: 25px;
+} 
+.t5:hover {
+  color: #BDD431; 
+  text-decoration: none; 
+}
+
+.t5:visited {
+  color: #BDD431; 
+} 
+.t5:active {
+  color: #BDD431; 
+}
+.d1{
+  font-size: 30px;
+  color: #9de89d;
+  font-weight: bolder;
+}
+.d2{
+  line-height: 1.6;
+  color: #3d155f;
+}
+.d3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/* IMAGES */
+
+
+.img1 {
+  margin-top: -100px;
+}
+
+
+.img2{
+  box-shadow: 12px 12px 10px #cbf3813b;
+  border-radius: 10px;
+  border: 0.5px #cbf3814d solid;
+}
+
+/* BOTTON */
+
+
+.b1 {
+  border-bottom: 4px #ccf381 solid;
+  padding-bottom: 15px;
+  margin-bottom: 100px;
+}
+.c-button {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+.c-button--gooey {
+  color: #3d155f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid #3d155f;
+  border-radius: 0;
+  position: relative;
+  transition: all 700ms ease;
+} 
+.c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+}  
+.c-button--gooey .c-button__blobs div {
+  background-color: #3d155f;
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 700ms ease;
+}
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+}
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 60ms;
+}
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+}
+.c-button--gooey:hover {
+  color: #fff;
+}
+.c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
+}
+.card {
+  box-shadow: 15px 15px 10px #cbf3819a;
+}
+
+
+/* ANIMATIN*/
+
+.show1{
+  animation-name: fes;
+  animation-duration: 1s;
+}
+
+/* @@@@@@@@@ */
+
+@keyframes fes {
+  50% {opacity: 0;}
+}
+
+
+.s21 {
+  opacity: 90%;
+  color:white ;
+  background-color: green;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 8px;
+  padding-top: 3px;
+  padding-bottom: 11px
+}
+
+.s20 {
+  border-radius: 10px;
+  padding: 8px;
+  padding-top: 3px;
+  padding-bottom: 11px;
+  opacity: 90%;
+  color:white ;
+  background-color: red;
+  text-align: center;
+  font-size: 20px;
+}
+
+  
+  @media (max-width:600px){
+    .t1{
+         margin-top: 150px;
+        }
+
+    .s20 ,.s21 {
+      font-size: 15px;
+    }
+  }
